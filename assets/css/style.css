@@ -128,8 +128,9 @@ ol {
 }
 .shadow-box {
     position: relative;
-    border-radius: 30px;
+    border-radius: 20px;
     background: #0F0F0F;
+    border: 1px solid hsl(0, 0%, 22%);
 }
 .shadow-box::after {
     content: '';
@@ -144,7 +145,7 @@ ol {
     background: linear-gradient(120deg, rgb(255 255 255 / 12%), rgb(255 255 255 / 1%));
     content: '';
     z-index: -1;
-    border-radius: 30px;
+    border-radius: 20px;
     margin: -1px;
 
 }
@@ -158,7 +159,7 @@ ol {
     height: 100%;
     z-index: 1;
     background: linear-gradient(120deg, rgba(255,255,255,0.3), rgba(255,255,255,0.05));
-    border-radius: 30px;
+    border-radius: 20px;
     opacity: 0.25;
 }
 .shadow-box * {
@@ -197,7 +198,7 @@ ol {
 .info-box .overlay-link {
     left: 0;
     top: 0;
-    border-radius: 30px;
+    border-radius: 20px;
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -218,7 +219,7 @@ ol {
     position: absolute;
     left: 0;
     top: 0;
-    border-radius: 30px;
+    border-radius: 20px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -307,7 +308,7 @@ ol {
 }
 .info-box.about-client-box .clients .client-item {
     position: relative;
-    border-radius: 30px;
+    border-radius: 20px;
     text-align: center;
     flex: 1;
     padding: 42px 30px 42px 30px;
@@ -322,7 +323,7 @@ ol {
     z-index: -1;
     opacity: 0.1;
     background: linear-gradient(120deg, rgba(255,255,255,0.3), rgba(255,255,255,0.05));
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .info-box.about-client-box .clients .client-item h1 {
     color: #ffffff;
@@ -472,7 +473,7 @@ ol {
 
 /* # About */
 .about-area {
-    padding-top: 80px;
+    padding-top: 0px;
 }
 .about-area .about-me-box {
     position: relative;
@@ -568,15 +569,15 @@ ol {
     width: 370px;
     flex: none;
     padding: 24px;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .about-area .about-image-box .image-inner {
     background: linear-gradient(90deg, #3C58E3 -15%, #C2EBFF 58%, #5AB5E2 97%);
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .about-area .about-image-box img {
     display: block;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .about-area .about-details {
     flex: 1;
@@ -657,12 +658,12 @@ ol {
     padding: 16px 16px 26px 16px;
 }
 .projects-area .project-item .project-img {
-    border-radius: 30px;
+    border-radius: 20px;
     margin-bottom: 13px;
 }
 .projects-area .project-item .project-img img {
     display: block;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .projects-area .project-item .project-info p {
     color: #BCBCBC;
@@ -732,7 +733,7 @@ ol {
     z-index: -1;
     opacity: 0.1;
     background: linear-gradient(120deg, rgba(255,255,255,0.3), rgba(255,255,255,0.05));
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .project-details-wrap .project-infos-wrap .project-details-info p {
     color: #FFFFFF;
@@ -755,7 +756,7 @@ ol {
 }
 .project-details-wrap .project-details-2-img {
     height: 400px;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .project-details-wrap .project-details-3-img img,
 .project-details-wrap .project-details-2-img img {
@@ -763,12 +764,12 @@ ol {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .project-details-wrap .project-details-3-img {
     height: 480px;
     position: relative;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .project-details-wrap .project-about-2 {
     padding: 36px;
@@ -855,13 +856,13 @@ ol {
 }
 .credential-area .credential-sidebar .img-box {
     background: linear-gradient(90deg, #3C58E3 -15%, #C2EBFF 58%, #5AB5E2 97%);
-    border-radius: 30px;
+    border-radius: 20px;
     margin-bottom: 40px;
 }
 .credential-area .credential-sidebar .img-box img {
     display: block;
     margin: auto;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .credential-area .credential-sidebar p {
     color: #BCBCBC;
@@ -1082,18 +1083,18 @@ ol {
 }
 .blog-sidebar .blog-sidebar-inner .search-widget form {
     position: relative;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .blog-sidebar .blog-sidebar-inner .search-widget form::before,
 .blog-sidebar .blog-sidebar-inner .search-widget form::after {
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .blog-sidebar .blog-sidebar-inner .search-widget form input {
     width: 100%;
     border: none;
     background: transparent;
     padding: 19px 20px;
-    border-radius: 30px;
+    border-radius: 20px;
     color: #ffffff;
 }
 .blog-sidebar .blog-sidebar-inner .search-widget form input:focus {
@@ -1102,7 +1103,7 @@ ol {
 }
 .blog-sidebar .blog-sidebar-inner .search-widget form .theme-btn {
     border: none;
-    border-radius: 30px;
+    border-radius: 20px;
     position: absolute;
     right: 6px;
     top: 6px;

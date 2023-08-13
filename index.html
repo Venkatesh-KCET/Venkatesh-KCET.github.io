@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venkatesh S - Web Developer Portfolio</title>
+    <title>Venkatesh S - Web Developer Portfolio | Best Web Developer</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +17,76 @@
     <link rel="stylesheet" href="./assets/css/aos.css">
 
     <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        :root {
+            --primary_color: #4CAF50;
+        }
+        .article-title {
+            padding-bottom: 10px;
+        }
+        .credential-area .articleTitle h2 {
+            padding-bottom: 10px;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        .credential-area .articleTitle h2::after,
+        .article-title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 5px;
+            background: #4CAF50;
+            border-radius: 3px;
+        }
+        .about-area .about-details .about-details-inner p {
+            text-align: justify;
+        }
+        .credential-area .credential-edc-exp .credential-edc-exp-item h5 {
+            color: var(--primary_color);
+            opacity: 1;
+        }
+        .credential-area .credential-edc-exp .credential-edc-exp-item h3 {
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        .left-details {
+            border: 1px solid hsl(0, 0%, 22%);
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+            height: fit-content;
+        }
+        .project-details-wrap .project-about-2 .right-details ul {
+            font-size: 16px;
+            color: #fff;
+            opacity: 0.8;
+            line-height: 1.56;
+            margin-bottom: 26px;
+        }
+        .about-area .credential-edc-exp-item h4 {
+            color: #BCBCBC;
+            opacity: 0.6;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+        @media (max-width: 768px) {
+            .credential-area .credential-sidebar {
+                width: 100% !important;
+            }
+
+            .credential-area .credential-sidebar h2,
+            .credential-area .credential-sidebar p {
+                padding-top: 0 !important;
+                text-align: left;
+            }
+            .credential-area .credential-sidebar .social-links li a {
+                border-radius: 10px;
+            }
+
+        }
+    </style>
 </head>
 <body>
 
@@ -36,10 +106,10 @@
                             <li><a href="#works">Works</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
-                        <a href="#contact" class="theme-btn">Let's talk</a>
+                        <!-- <a href="#contact" class="theme-btn">Let's talk</a> -->
                     </nav>
 
-                    <a href="#contact" class="theme-btn">Let's talk</a>
+                    <!-- <a href="#contact" class="theme-btn">Let's talk</a> -->
 
                     <div class="show-menu">
                         <span></span>
@@ -54,49 +124,43 @@
         <section class="credential-area">
             <div class="container">
                 <div class="gx-row d-flex">
+
                     <div class="credential-sidebar-wrap" data-aos="zoom-in">
                         <div class="credential-sidebar text-center">
-                            <div class="shadow-box">
+                            <div class="shadow-box pt-5">
                                 <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
-                                <!-- <div class="img-box">
-                                    <img src="./assets/images/me.png" alt="About Me">
-                                </div> -->
-                                <h2>Venkatesh S</h2>
-                                <p>Full Stack Web Developer</p>
-        
-                                <ul class="social-links d-flex justify-content-center">
-                                    <li><a href="https://github.com/Venkatesh-KCET"><i class="iconoir-github"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/venkatesh-s-poojahegde/"><i class="iconoir-linkedin"></i></a></li>
-                                    <li><a href="https://www.instagram.com/venkatesh_poojahegde/"><i class="iconoir-instagram"></i></a></li>
-                                </ul>
-        
-                                <a href="#contact" class="theme-btn">Contact Me</a>
+                                <div class="row">
+                                    <div class="col-4 col-md-12">
+                                        <div class="img-box m-auto">
+                                            <img src="./assets/images/visualhunter-85f4ec9341.png" alt="About Me">
+                                        </div>        
+                                    </div>
+                                    <div class="col col-md-12 d-flex flex-column justify-content-center">
+                                        <h2 class="pt-4">Venkatesh S</h2>
+                                        <p>Full Stack Web Developer</p>
+                                        <ul class="social-links d-flex justify-content-start justify-content-md-center m-0">
+                                            <li><a href="https://github.com/Venkatesh-KCET"><i class="iconoir-github"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/in/venkatesh-s-poojahegde/"><i class="iconoir-linkedin"></i></a></li>
+                                            <li><a href="https://www.instagram.com/venkatesh_poojahegde/"><i class="iconoir-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <style>
-                        .about-area .credential-edc-exp-item h4 {
-                            color: #BCBCBC;
-                            opacity: 0.6;
-                            font-size: 16px;
-                            font-weight: 500;
-                            margin-bottom: 12px;
-                        }
-                    </style>
                     <div class="credential-content flex-1">
-                        <section class="about-area">
+                        <section class="about-area articleTitle">
                             <div class="about-details aos-init aos-animate" data-aos="zoom-in">
                                 <h1 class="section-heading aos-init aos-animate" data-aos="fade-up"><img src="./assets/images/star-2.png" alt="Star"> Self-summary <img src="./assets/images/star-2.png" alt="Star"></h1>
                                 <div class="about-details-inner shadow-box">
                                     <img src="./assets/images/icon2.png" alt="Star">
-                                    <h1>Venkatesh S</h1>
+                                    <h1 class="article-title">Venkatesh S</h1>
                                     <br>
                                     <p>Hello there! I'm a passionate and creative web developer based in Srivilliputtur. With a deep love for all things web-related, I have a knack for turning ideas into captivating digital experiences. My journey in the world of web development began during my school days, where I pursued a 7th. Since then, I have gained extensive experience working with various tools and technologies, including JavaScript, CSS, HTML, jQuery, Python, and more. I take pride in my ability to bring business visions to life through elegant and functional websites. Beyond just coding, I am well-versed in SEO, and web scraping.</p>
                                     <br>
                                     <p>In addition to my technical skills, I am a continuous learner and actively engage in online coding platforms to enhance my skills. Staying up-to-date with the latest industry trends is important to me, as I believe in delivering cutting-edge solutions. When I'm not immersed in coding, you can find me exploring new technologies, practicing my digital drawing skills, or delving into the world of blogging.</p>        
                                 </div>
                             </div>
-
                             <div class="row mt-24">
                                 <div class="aos-init aos-animate" data-aos="zoom-in">
                                     <div class="about-edc-exp about-experience shadow-box credential-edc-exp">
@@ -161,52 +225,42 @@
                                         <h2 data-aos="fade-up">Skills</h2>
                                         <div class="d-grid skill-items gap-24 flex-wrap">
                                             <div class="skill-item" data-aos="zoom-in">
-                                                <span class="percent">75%</span>
                                                 <h3 class="name">JavaScript</h3>
                                                 <p>Self-taught</p>
                                             </div>
                                             <div class="skill-item" data-aos="zoom-in">
-                                                <span class="percent">70%</span>
                                                 <h3 class="name">Python</h3>
                                                 <p>Self-taught, College</p>
                                             </div>
                                             <div class="skill-item" data-aos="zoom-in">
-                                                <span class="percent">50%</span>
                                                 <h3 class="name">MEAN</h3>
                                                 <p>Lamda Tech Softics</p>
                                             </div>
                                             <div class="skill-item" data-aos="zoom-in">
-                                                <span class="percent">78%</span>
                                                 <h3 class="name">SQL & MongoDB</h3>
                                                 <p>College Website</p>
                                             </div>
                                             <div class="skill-item" data-aos="zoom-in">
-                                                <span class="percent">80%</span>
                                                 <h3 class="name">Web Scraping</h3>
                                                 <p>Self-taught</p>
                                             </div>
                                             <div class="skill-item" data-aos="zoom-in">
-                                                <span class="percent">70%</span>
                                                 <h3 class="name">PWA</h3>
                                                 <p>Self-taught</p>
                                             </div>
                                             <div class="skill-item" data-aos="zoom-in">
-                                                <span class="percent">75%</span>
                                                 <h3 class="name">WordPress</h3>
                                                 <p>ARS DigiMart India</p>
                                             </div>
                                             <div class="skill-item" data-aos="zoom-in">
-                                                <span class="percent">80%</span>
                                                 <h3 class="name">SEO</h3>
                                                 <p>ARS DigiMart India</p>
                                             </div>
                                             <div class="skill-item" data-aos="zoom-in">
-                                                <span class="percent">70%</span>
                                                 <h3 class="name">Django</h3>
                                                 <p>College Website</p>
                                             </div>
                                             <div class="skill-item" data-aos="zoom-in">
-                                                <span class="percent">70%</span>
                                                 <h3 class="name">GitHub & Git</h3>
                                                 <p>Self-taught</p>
                                             </div>
@@ -214,19 +268,16 @@
                                     </div>            
                                 </div>
                             </div>
-
                             <div class="row mt-24">
                                 <div class="aos-init aos-animate" data-aos="zoom-in">
                                     <div class="about-edc-exp about-experience shadow-box skills-wrap awards-wrap" style="padding-top:30px;">
                                         <h2 data-aos="fade-up">Awards</h2>
                                         <div class="d-grid skill-items gap-24 flex-wrap">
                                             <div class="skill-item" data-aos="zoom-in">
-                                                <span class="percent">2022 - 2023</span>
                                                 <h3 class="name">Solved 1200+ Problems in Skillrack</h3>
                                                 <p>I achieved an overall rank of 5237 out of a pool of more than 50,000 participants.</p>
                                             </div>
                                             <div class="skill-item" data-aos="zoom-in">
-                                                <span class="percent">24 Nov 2022</span>
                                                 <h3 class="name">Speaker In CII Event - Team (Student Startup Category)</h3>
                                                 <p>Confederation of Indian Industry (CII) Connect Madurai 2022, Courtyard by Marriott, Madurai</p>
                                             </div>
@@ -234,11 +285,7 @@
                                     </div>            
                                 </div>
                             </div>
-
                         </section>
-
-
-
                     </div>
                 </div>
 
@@ -266,17 +313,20 @@
                                         <li>
                                             <p>Link</p>
                                             <h4>
-                                                <a href="https://vstcentral-kia.in/">vstcentral-kia.in</a>
+                                                <a target="_blank" href="https://vstcentral-kia.in/">vstcentral-kia.in</a>
                                             </h4>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="right-details">
                                     <h3>Description</h3>
-                                    <p>The proposed Car showroom management system is very effective. If someone is interested in buying any car, then he/she can check all the information related to the car in the given portal. He/she can even book the test drive within the system.</p>
-                                    <p>The proposed system also helps the buyer to check which cars and companies are good for them, by showing them the past reviews about the car/companies. The proposed system is so helpful and effective.</p>
+                                    <p>Collaborated with ARS DigiMart India during an internship to create a dynamic website for VST Central Kia, a prominent Kia dealer with multiple showrooms across Chennai, Vellore, Bangalore, Yeswanthpur, and Salem.</p>
+                                    <p>Leveraged JavaScript, jQuery, GitHub, Plesk, HTML5, PHP, Cascading Style Sheets (CSS), and data scraping techniques to develop an interactive platform.</p>
+                                    <p>Designed the website to effectively showcase product details, car models, and outlet information, aimed at generating leads and enhancing customer engagement.</p>
+                                    <p>Integrated webhooks for seamless data synchronization and real-time updates.</p>
+                                    <p>Contributed to the growth of the dealership's online presence and customer reach, highlighting the brand's offerings and services.</p>
                                     <h3>Skills</h3>
-                                    <p>JavaScript, jQuery, MySQL, GitHub, Plesk, HTML5, PHP, Cascading Style Sheets (CSS)</p>
+                                    <p>JavaScript, jQuery, WebHooks Integration, GitHub Collaboration, Plesk Server Management, HTML5 Proficiency, PHP Development, Cascading Style Sheets (CSS), Data Scraping Techniques, Web Development Strategies, Project Collaboration and Coordination, Real-time Data Synchronization, Customer Engagement Enhancement</p>
                                 </div>
                             </div>
                         </div>
@@ -302,24 +352,25 @@
                                         <li>
                                             <p>Link</p>
                                             <h4>
-                                                <a href="https://hegdepooja-poojahegde.github.io/">hegdepooja-poojahegde.github.io</a>
+                                                <a target="_blank" href="https://hegdepooja-poojahegde.github.io/">hegdepooja-poojahegde.github.io</a>
                                             </h4>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="right-details">
                                     <h3>Description</h3>
-                                    <p>This Project Was my first complete outcome of learning. I was inspired by the Actress Pooja Hegde And Decided To Create a Website. This Website was created and maintained by me.</p>
-                                    <p>After Some years, i started to learn Digital Marketing And The I have Experiment with this site.</p>
-                                    <p>This Site is the turning point of my life. I explore logo Design, SEO, WordPress, and Web Development, And Also Started To Learn Photoshop to edit images.This Project Was my first complete outcome of learning. I was inspired by the Actress Pooja Hegde And Decided To Create a Website. This Website was created and maintained by me. After Some years, i started to learn Digital Marketing And The I have Experiment with this site. Some Of the Keywords also ranked in the google. They are: 1. "pooja hegde miss india" 2. "pooja hegde miss universe" 3. "pooja hegde miss universe india" 4. "pooja hegde 2010" </p>
-                                    <h3>Some ranked Keywords in Google</h3>
-                                    <p>"pooja hegde miss india"</p>
-                                    <p>"pooja hegde miss universe"</p>
-                                    <p>"pooja hegde miss universe india"</p>
-                                    <p>"pooja hegde 2010"</p>
-
+                                    <p>During my 7th standard in school, I embarked on my first complete learning journey by creating a website inspired by actress Pooja Hegde. This project became a pivotal turning point in my life. As time passed, I delved into the world of digital marketing, using this very website as my experimental canvas.</p>
+                                    <p>This project served as a platform for exploring diverse skills, including logo design, SEO, WordPress, web development, and even Photoshop for image editing. Notably, the website achieved impressive Google rankings, securing a place on the first page.</p>
+                                    <h3>Some of the keywords that ranked well were:</h3>
+                                    <ul class="text-white">
+                                        <li>pooja hegde miss india</li>
+                                        <li>pooja hegde miss universe</li>
+                                        <li>pooja hegde miss universe india</li>
+                                        <li>pooja hegde 2010</li>
+                                    </ul>
+                                    <p>This project marked the beginning of my journey and remains a cherished milestone in my growth as a web developer.</p>
                                     <h3>Skills</h3>
-                                    <p>JavaScript, jQuery, Git, GitHub, HTML5, Cascading Style Sheets (CSS)</p>
+                                    <p>Web Development, Logo Design, Search Engine Optimization (SEO), WordPress Management, Digital Marketing Strategies, Image Editing using Photoshop, Keyword Ranking and Optimization, Google Page Ranking Strategies, Content Creation and Management, Creative Problem-Solving, Project Management and Maintenance</p>
                                 </div>
                             </div>
                         </div>
@@ -346,16 +397,19 @@
                                         <li>
                                             <p>Link</p>
                                             <h4>
-                                                <a href="http://kamarajengg.edu.in/">kamarajengg.edu.in</a>
+                                                <a target="_blank" href="http://kamarajengg.edu.in/">kamarajengg.edu.in</a>
                                             </h4>
                                         </li>                                        
                                     </ul>
                                 </div>
                                 <div class="right-details">
                                     <h3>Description</h3>
-                                    <p>A college website built using Django framework.A college website built using Django framework.</p>
+                                    <p>During my second year in college, I undertook a valuable course on Python's Django framework at Kamaraj College of Engineering and Technology. After completing the course, I participated in a group project where I designed and built a Blog CRM system in just a day. Impressed by my work, the Head of the Computer Science and Engineering department nominated me to revamp our college website.</p>
+                                    <p>I took on the challenge and transformed the outdated PHP-based college website into a modern and efficient platform. Utilizing JavaScript, jQuery, PostgreSQL, HTML5, CRON, and CSS, I redesigned the website to provide comprehensive information about our college.</p>
+                                    <p>I also implemented two sub-projects. One automated sending birthday wishes to alumni, students, and teachers via email. The other allowed students to conveniently view their semester results, ensuring smooth performance even with multiple users simultaneously.</p>
+                                    <p>Through this project, I showcased my ability to create user-friendly and efficient web solutions using Python's Django framework.</p>
                                     <h3>Skills</h3>
-                                    <p>JavaScript, jQuery, PostgreSQL, HTML5, CRON, Cascading Style Sheets (CSS)</p>
+                                    <p>Python (Django framework), JavaScript, jQuery, PostgreSQL, HTML5, CRON (scheduling), Cascading Style Sheets (CSS)</p>
                                 </div>
                             </div>
                         </div>
@@ -382,10 +436,57 @@
                                 </div>
                                 <div class="right-details">
                                     <h3>Description</h3>
-                                    <p>One of the key features of this search engine is its own crawler, which adheres to the rules specified in the robot.txt file and sitemap. It efficiently follows all internal backlinks, ensuring comprehensive coverage of the indexed content.</p>
-                                    <p>For image search, the search engine utilizes the alt attribute to provide relevant text-based results. Additionally, it includes a news search feature that periodically scrapes data from official RSS News Feeds, ensuring users have access to the latest news updates.</p>
+                                    <p>Revitalized a legacy custom search engine project based on Sphider (sphider.eu), designed by Ando Saabas. Implemented a series of enhancements that propelled it into modernity and improved functionality.</p>
+                                    <p>Integral to the engine's capabilities is a self-developed crawler, meticulously adhering to robot.txt and sitemap guidelines. By navigating internal backlinks, the crawler ensures an all-encompassing index coverage.</p>
+                                    <p>Notably, the search engine excels in image search, relying on the alt attribute for pertinent text-based outcomes. It further boasts a dynamic news search feature, periodically scraping data from official RSS News Feeds, granting users access to the latest news.</p>
+                                    <p>The overhaul included upgrading outdated features to align with contemporary PHP versions and web standards. The project was transformed with HTML5 and CSS into an aesthetically pleasing and responsive search interface.</p>
+                                    <p>A proprietary web crawler was introduced to facilitate the scraping of text and images from websites. This modernized iteration also seamlessly incorporates RSS feed support, empowering regular news updates through scheduled cron jobs.</p>
+                                    <p>This transformation culminated in an adept search engine aligned with contemporary web requirements, offering sophisticated spidering and indexing capabilities. Comprehensive search functionalities encompassed AND, OR, and phrase searches, alongside advanced features such as auto-suggestions and word stemming.</p>
+                                    <p>Administering the system entails rich insights into site and search statistics, enhancing the overall user experience. The project stands as a testament to comprehensive web development expertise and an ability to revitalize and tailor legacy projects for modern applications.</p>
                                     <h3>Skills</h3>
-                                    <p>JavaScript, jQuery, MySQL, HTML5, PHP, Cascading Style Sheets (CSS), Web Scraping, Search Engine Optimization (SEO)</p>
+                                    <ul>
+                                        <li>
+                                            <b>Programming Languages</b>
+                                        </li>
+                                        <li>PHP, HTML5, CSS3</li>
+                                        <li>
+                                            <b>Web Technologies</b>
+                                        </li>
+                                        <li>Web Scraping, Responsive Web Design</li>
+                                        <li>
+                                            <b>Search Engine Development</b>
+                                        </li>
+                                        <li>Custom Search Engine Enhancement, Web Crawling, Indexing and Searching Algorithms</li>
+                                        <li>
+                                            <b>Version Control</b>
+                                        </li>
+                                        <li>Git, GitHub</li>
+                                        <li>
+                                            <b>Web Development Tools</b>
+                                        </li>
+                                        <li>Sitemap and robot.txt Implementation, RSS Feed Integration</li>
+                                        <li>
+                                            <b>Content Management</b>
+                                        </li>
+                                        <li>News Feed Scraping, Image Search Enhancement</li>
+                                        <li>
+                                            <b>Web Standards</b>
+                                        </li>
+                                        <li>Modern Web Development Practices, HTML5 and CSS3 Compliance</li>
+                                        <li>
+                                            <b>Project Upgrade and Modernization</b>
+                                        </li>
+                                        <li>Legacy System Enhancement, Compatibility with Contemporary PHP Versions</li>
+                                        <li>
+                                            <b>User Experience Optimization</b>
+                                        </li>
+                                        <li>Auto-suggestions Implementation, Word Stemming for Search Optimization</li>
+                                        <li>
+                                            <b>Data Analysis and Insights</b>
+                                        </li>
+                                        <li>Site and Search Statistics Interpretation</li>                                        
+                                    </ul>
+
                                 </div>
                             </div>
                         </div>
@@ -490,5 +591,8 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+        document.querySelector(".credential-area .credential-sidebar.text-center").style.width = document.body.clientWidth*0.25 + "px";
+    </script>
 </body>
 </html>
