@@ -35,7 +35,7 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            width: 40px;
+            width: 50px;
             height: 5px;
             background: #4CAF50;
             border-radius: 3px;
@@ -86,45 +86,49 @@
             }
 
         }
+
+.about-experience .credential-edc-exp-item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: -22px;
+    left: -40px;
+    width: 1px;
+    height: calc(100% + 60px);
+    background: hsl(0, 0%, 22%);
+}
+.about-experience .credential-edc-exp-item::after {
+    height: 8px;
+    width: 8px;
+    left: -43px;
+    content: "";
+    position: absolute;
+    top: 5px;
+    background: #4CAF50;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px hsl(0, 0%, 22%);
+}
+.credential-edc-exp-item {
+    margin-left: 65px;
+}
+.about-experience .credential-edc-exp-item:last-child::before {
+    content: "";
+    position: absolute;
+    top: -22px;
+    left: -40px;
+    width: 1px;
+    height: 35px;
+    background: hsl(0, 0%, 22%);
+}
     </style>
 </head>
 <body>
 
     <main class="main-aboutpage">
 
-        <!-- Header -->
-        <header class="header-area">
-            <div class="container">
-                <div class="gx-row d-flex align-items-center justify-content-between">
-                    <a href="/" class="logo">
-                        <h1 style="letter-spacing: -4px;" class="text-white">Venkatesh S</h1>
-                    </a>
-
-                    <nav class="navbar">
-                        <ul class="menu">
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#works">Works</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                        <!-- <a href="#contact" class="theme-btn">Let's talk</a> -->
-                    </nav>
-
-                    <!-- <a href="#contact" class="theme-btn">Let's talk</a> -->
-
-                    <div class="show-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </header>
-
         <!-- Credentials -->
         <section class="credential-area">
             <div class="container">
                 <div class="gx-row d-flex">
-
                     <div class="credential-sidebar-wrap" data-aos="zoom-in">
                         <div class="credential-sidebar text-center">
                             <div class="shadow-box pt-5">
@@ -330,7 +334,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div data-aos="zoom-in" class="aos-init aos-animate">
                             <div class="project-about-2 d-flex shadow-box mb-24">
                                 <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
@@ -374,8 +377,6 @@
                                 </div>
                             </div>
                         </div>
-
-
                         <div data-aos="zoom-in" class="aos-init aos-animate">
                             <div class="project-about-2 d-flex shadow-box mb-24">
                                 <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
@@ -413,7 +414,6 @@
                                 </div>
                             </div>
                         </div>
-                        
                         <div data-aos="zoom-in" class="aos-init aos-animate">
                             <div class="project-about-2 d-flex shadow-box mb-24">
                                 <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
@@ -445,52 +445,21 @@
                                     <p>Administering the system entails rich insights into site and search statistics, enhancing the overall user experience. The project stands as a testament to comprehensive web development expertise and an ability to revitalize and tailor legacy projects for modern applications.</p>
                                     <h3>Skills</h3>
                                     <ul>
-                                        <li>
-                                            <b>Programming Languages</b>
-                                        </li>
-                                        <li>PHP, HTML5, CSS3</li>
-                                        <li>
-                                            <b>Web Technologies</b>
-                                        </li>
-                                        <li>Web Scraping, Responsive Web Design</li>
-                                        <li>
-                                            <b>Search Engine Development</b>
-                                        </li>
-                                        <li>Custom Search Engine Enhancement, Web Crawling, Indexing and Searching Algorithms</li>
-                                        <li>
-                                            <b>Version Control</b>
-                                        </li>
-                                        <li>Git, GitHub</li>
-                                        <li>
-                                            <b>Web Development Tools</b>
-                                        </li>
-                                        <li>Sitemap and robot.txt Implementation, RSS Feed Integration</li>
-                                        <li>
-                                            <b>Content Management</b>
-                                        </li>
-                                        <li>News Feed Scraping, Image Search Enhancement</li>
-                                        <li>
-                                            <b>Web Standards</b>
-                                        </li>
-                                        <li>Modern Web Development Practices, HTML5 and CSS3 Compliance</li>
-                                        <li>
-                                            <b>Project Upgrade and Modernization</b>
-                                        </li>
-                                        <li>Legacy System Enhancement, Compatibility with Contemporary PHP Versions</li>
-                                        <li>
-                                            <b>User Experience Optimization</b>
-                                        </li>
-                                        <li>Auto-suggestions Implementation, Word Stemming for Search Optimization</li>
-                                        <li>
-                                            <b>Data Analysis and Insights</b>
-                                        </li>
-                                        <li>Site and Search Statistics Interpretation</li>                                        
+                                        <li><b>Programming Languages</b>PHP, HTML5, CSS3</li>
+                                        <li><b>Web Technologies</b>Web Scraping, Responsive Web Design</li>
+                                        <li><b>Search Engine Development</b>Custom Search Engine Enhancement, Web Crawling, Indexing and Searching Algorithms</li>
+                                        <li><b>Version Control</b>Git, GitHub</li>
+                                        <li><b>Web Development Tools</b>Sitemap and robot.txt Implementation, RSS Feed Integration</li>
+                                        <li><b>Content Management</b>News Feed Scraping, Image Search Enhancement</li>
+                                        <li><b>Web Standards</b>Modern Web Development Practices, HTML5 and CSS3 Compliance</li>
+                                        <li><b>Project Upgrade and Modernization</b>Legacy System Enhancement, Compatibility with Contemporary PHP Versions</li>
+                                        <li><b>User Experience Optimization</b>Auto-suggestions Implementation, Word Stemming for Search Optimization</li>
+                                        <li><b>Data Analysis and Insights</b>Site and Search Statistics Interpretation</li>                                        
                                     </ul>
 
                                 </div>
                             </div>
                         </div>
-
                         <div data-aos="zoom-in" class="aos-init aos-animate">
                             <div class="project-about-2 d-flex shadow-box mb-24">
                                 <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
@@ -513,11 +482,39 @@
                                 </div>
                                 <div class="right-details">
                                     <h3>Description</h3>
-                                    <p>I have recently developed a website that bears resemblance to Spotify, a popular music streaming platform. As part of the development process, I successfully scraped songs and related details from Hungama Music.</p>
-                                    <p>To enhance the performance of the website, I made use of GitHub and Cloudflare as a free Content Delivery Network (CDN). This implementation resulted in an impressive response time of just 4 ms. In comparison, Hungama Music typically takes 20 ms to load.</p>
-                                    <p>With this project, I aimed to create a user-friendly music streaming experience while ensuring optimal speed and performance.</p>
+                                    <p>I took the initiative to enhance an existing music streaming platform by incorporating a range of advanced features. </p>
+                                    <p>Noteworthy contributions include:</p>
+                                    <ul>
+                                        <li><b>Song Scraping:</b> Successfully integrated song scraping capabilities from Hungama Music, significantly enriching the platform's content library.</li>
+                                        <li><b>Performance Enhancement:</b> Leveraged GitHub and Cloudflare as a free Content Delivery Network (CDN), dramatically reducing response time to an impressive 4 ms, compared to the typical 20 ms on comparable platforms.</li>
+                                        <li>
+                                            <b>Soundify Sub Project:</b>
+                                            <ul>
+                                                <li>Developed Soundify, a lightweight music streaming app utilizing AngularJS and hosted on the Cloudflare server.</li>
+                                                <li><b>Objective:</b> Crafted a streamlined, ad-free music streaming experience that eliminates the necessity for user logins, adhering to Progressive Web App (PWA) principles.</li>
+                                                <li><b>Features:</b> Empowered users with song playback, ensured a minimalistic design philosophy, and provided a seamless ad-free listening environment while maintaining accessibility and optimized performance.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p>This project stands as a testament to my ability to independently enhance and optimize existing platforms, creating efficient, user-centric, and engaging music streaming experiences.</p>
+                                    <p>Sub Project Demo Link: <a href="https://soundify-7en.pages.dev/" target="_blank">https://soundify-7en.pages.dev/</a></p>
                                     <h3>Skills</h3>
-                                    <p>Progressive Web Applications (PWAs), Git, GitHub, JavaScript, jQuery, MySQL, HTML5, PHP, Cascading Style Sheets (CSS), Web Scraping, Search Engine Optimization (SEO)</p>
+                                    <ul>
+                                        <li><b>Programming Languages:</b> PHP, HTML5, CSS3, JavaScript, jQuery</li>
+                                        <li><b>Database Management:</b> MySQL</li>
+                                        <li><b>Web Technologies:</b> Progressive Web Applications (PWAs)</li>
+                                        <li><b>Version Control:</b> Git</li>
+                                        <li><b>Web Development Tools:</b> GitHub, Cloudflare</li>
+                                        <li>Web Scraping</li>
+                                        <li>Content Delivery Network (CDN) Implementation</li>
+                                        <li>Performance Optimization</li>
+                                        <li>User Experience Enhancement</li>
+                                        <li>Progressive Web App (PWA) Principles</li>
+                                        <li>Collaborative Problem Solving</li>
+                                        <li>Project Enhancement and Modernization</li>
+                                        <li>Ad-free User Experience Design</li>
+                                        <li>Independent Project Management</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
